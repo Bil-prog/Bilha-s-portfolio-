@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 a {
     color: #000;
@@ -41,13 +42,15 @@ a {
     text-decoration-color: white;
 }
 a:hover {
-    color: gray;
+    color: #fb6f92;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
 }
 .logo {
     font-size: 2rem;
+    color: #fb6f92;
+    font-weight: bolder;
 }
 .logo:hover {
     cursor: default;
@@ -71,7 +74,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #fb6f92;
     transition: all 0.3 ease-in-out;
 }
 .menu-links {
@@ -79,19 +82,25 @@ a:hover {
     top: 100%;
     right: 0;
     background-color: white;
-    width: fit-content;
+    width: 200px;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    height: 36vh;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .menu-links a {
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #000;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.menu-links a:hover {
+    color: #fb6f92;
 }
 .menu-links li {
     list-style: none;
@@ -137,6 +146,23 @@ section {
     gap: 5rem;
     height: 80vh;
 }
+.profilepic{
+    border-radius: 20%;
+    animation: imgg 3s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes imgg {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
 .section_pic-container {
     display: flex;
     height: 400px;
@@ -172,6 +198,10 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: translateY(-10px);
 }
 
 /* buttons */
@@ -180,20 +210,29 @@ section {
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
-.btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+.btn:hover {
+    transform: translateY(-5px);
+}
+.btn-color-2 {
+    border: #fb6f92 0.1rem solid;
+    background: white;
+    color: #fb6f92;
+}
+.btn-color-1 {
+    border: none;
 }
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
+    transition: ease-out 0.5s;
 }
 .btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: #fb6f92;
     color: white;
 }
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: #ef91a8;
 }
 .btn-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
@@ -219,7 +258,7 @@ section {
     display: flex;
 }
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 20%;
 }
 .arrow {
     position: absolute;
@@ -231,13 +270,18 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    /* border: rgb(53, 53, 53) 0.1rem solid; */
     border-color: rgb(163, 163, 163);
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.det-abt {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    box-shadow: none;
 }
 .section-container {
-    gap: 4rem;
-    height: 80%;
+    gap: 2rem;
+    /* height: 80%; */
 }
 .section_pic-container {
     height: 400px;
@@ -335,7 +379,8 @@ article .icon {
 /* Footer */
 footer{
     height: 26vh;
-    margin: 0 1rem;
+    position: relative;
+    background: #fb6f92;
 }
 footer p{
     text-align: center;
