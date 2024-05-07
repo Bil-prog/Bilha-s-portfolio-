@@ -61,7 +61,7 @@
                 <img src="./assets/profile-pic-2.jpg" alt="profile picture" class="about-pic">
             </div>
             <div class="about-details-container">
-                <div class="about-containers">
+                <!-- <div class="about-containers">
                     <div class="details-container det-abt one">
                         <img src="./assets/experience.png" alt="experience icon" class="icon">
                         <h3>Experience</h3>
@@ -72,11 +72,35 @@
                         <h3>Education</h3>
                         <p>B.sc. Bachelors Degree<br/> Mathematics and Computer Science</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="text-container">
                     <p>
                         With a background spanning web development, data analysis and cybersecurity, I bring a diverse skill set tailored to meet the evolving demands of the digital landscape. I specialize in crafting visually appealing and user-centric interfaces while ensuring seamless functionality. My expertise in cybersecurity encompasses reconnaissance, vulnerability analysis, and penetration testing, contributing to robust threat mitigation strategies. I am driven by a passion for innovation and continuous learning, and I am excited to leverage my skills to make meaningful contributions in the ever-evolving world of technology. 
                     </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend with React JS</li>
+                            <li><span>Cybersecurity</span><br>Defensive and Offensive</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2024 - Apr 2024</span><br>Technical Intern - Communications Authority</li>
+                            <li><span>Oct 2023 - Nov 2023</span><br>Cybersecurity Intern - Senselearner Technologies</li>
+                            <li><span>Sep 2019 - Sep 2021</span><br>Frontend Developer - Finetek Labs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>May 2023 - Aug 2023</span><br>Certified Security Analyst<br>USIU, CyberShujaa Program</li>
+                            <li><span>Sep 2019 - Dec 2023</span><br>Bsc. Mathematics and Computer Science<br>Kenyatta University</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -87,7 +111,7 @@
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
+                <div class="details-container exp">
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
@@ -120,7 +144,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="details-container">
+                <div class="details-container exp">
                     <h2 class="experience-sub-title">Cybersecurity</h2>
                     <div class="article-container">
                         <article>

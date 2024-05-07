@@ -20,3 +20,16 @@ sr.reveal('.abt-pic', {delay:450, origin: 'left'})
 sr.reveal('.one', {delay:450, origin: 'right'})
 sr.reveal('.two', {delay:480, origin: 'right'})
 sr.reveal('.text-container', {delay:540, origin: 'right'})
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}

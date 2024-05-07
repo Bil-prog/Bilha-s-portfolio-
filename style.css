@@ -13,7 +13,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-p {
+p, ul li {
     color: rgb(85, 85, 85);
 }
 
@@ -288,6 +288,57 @@ section {
     width: 400px;
     margin: auto 0;
 }
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fb6f92;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 65%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+/* .tab-contents ul li span::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    right: 100%;
+    top: 0;
+    background-color: #fb6f92;
+} */
+.tab-contents ul li span{
+    color: #fb6f92;
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+    border-left: 2px solid #bababa;
+    padding: 0px 30px;
+}
+.tab-contents.active-tab{
+    display: block;
+}
 /* Experience */
 #experience {
     position: relative;
@@ -320,7 +371,13 @@ article {
 article .icon {
     cursor: default;
 }
-
+.exp{
+    transition: background 0.5s, transform 0.5s;
+}    
+.exp:hover{
+    background: #fb6f92;
+    transform: translateY(-10px);
+}
 /* projects */
 #projects {
     position: relative;
