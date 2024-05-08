@@ -185,7 +185,6 @@ section {
 }
 .title {
     font-size: 3rem;
-    text-align: center;
 }
 #socials-container {
     display: flex;
@@ -232,7 +231,9 @@ section {
     color: white;
 }
 .btn-color-1:hover {
-    background: #ef91a8;
+    border: #fb6f92 0.1rem solid;
+    background: white;
+    color: #fb6f92;
 }
 .btn-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
@@ -244,6 +245,7 @@ section {
 /* About */
 #about {
     position: relative;
+    margin-top: 8rem;
 }
 .about-containers {
     gap: 2rem;
@@ -317,16 +319,6 @@ section {
     margin: 10px 0;
     font-size: 14px;
 }
-/* .tab-contents ul li span::before{
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    right: 100%;
-    top: 0;
-    background-color: #fb6f92;
-} */
 .tab-contents ul li span{
     color: #fb6f92;
     font-size: 16px;
@@ -388,8 +380,8 @@ article .icon {
 }
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    height: 60%;
 }
 .project-title{
     margin: 1rem;
@@ -432,7 +424,7 @@ article .icon {
 
 }
 .email{
-    height: 2.5rem;
+    height: 2.6rem;
 }
 /* Footer */
 footer{
@@ -448,5 +440,6 @@ footer p{
     text-decoration: none;
 }
 #pink{
-    background: #fb6f92;  
+    background: #fb6f92; 
+
 }

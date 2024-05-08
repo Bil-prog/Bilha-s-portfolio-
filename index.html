@@ -6,6 +6,7 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/a294e00a36.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -45,35 +46,25 @@
             <p class="section_text_p2">IT professional</p>
             <div class="btn-container">
                 <button class="btn btn-color-1" onclick="window.open('./assets/BILHA_MWENGI_CV.pdf')">Download CV</button>
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+                <!-- <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button> -->
             </div>
             <div id="socials-container">
+                <!-- <img src="./assets/email.png" alt="email" class="icon email" onclick="('mailto:bilhamwengi34@gmail.com')"> -->
                 <img src="./assets/linkedin.png" class="icon" alt="linkedinprofile" onclick="window.open('https://www.linkedin.com/in/bilha-mwengi/')">
                 <img src="./assets/github.png" class="icon" alt="githubprofile" onclick="window.open('https://github.com/Bil-prog')">
             </div>
         </div>
     </section>
     <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <!-- <p class="section_text_p1">Get To Know More</p> -->
+        <!-- <h1 class="title">About Me</h1> -->
         <div class="section-container">
             <div class="section_pic-container abt-pic">
                 <img src="./assets/profile-pic-2.jpg" alt="profile picture" class="about-pic">
             </div>
             <div class="about-details-container">
-                <!-- <div class="about-containers">
-                    <div class="details-container det-abt one">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ years <br/> IT</p>
-                    </div>
-                    <div class="details-container det-abt two">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.sc. Bachelors Degree<br/> Mathematics and Computer Science</p>
-                    </div>
-                </div> -->
                 <div class="text-container">
+                    <h1 class="title">About Me</h1>
                     <p>
                         With a background spanning web development, data analysis and cybersecurity, I bring a diverse skill set tailored to meet the evolving demands of the digital landscape. I specialize in crafting visually appealing and user-centric interfaces while ensuring seamless functionality. My expertise in cybersecurity encompasses reconnaissance, vulnerability analysis, and penetration testing, contributing to robust threat mitigation strategies. I am driven by a passion for innovation and continuous learning, and I am excited to leverage my skills to make meaningful contributions in the ever-evolving world of technology. 
                     </p>
@@ -108,7 +99,7 @@
     </section>
     <section id="experience">
         <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title" style="text-align: center;">Expertise</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container exp">
@@ -182,13 +173,13 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
     <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section_text_p1">Browse some of My </p>
+        <h1 class="title" style="text-align: center;">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="project-1" class="project-img">
+                        <img src="https://whitekube.com/wp-content/uploads/2019/08/ecommerce-1.png" class="project-img" alt="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">E-commerce Website</h2>
                     <div class="btn-container">
@@ -198,7 +189,7 @@
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-2.png" alt="project-1" class="project-img">
+                        <img src="https://cdn3.iconfinder.com/data/icons/volunteering-1/2000/ngo-01-01-256.png" alt="project-1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">NGO Website</h2>
                     <div class="btn-container">
@@ -212,8 +203,8 @@
     </section>
     <div id="pink">
     <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section_text_p1">Let's Talk</p>
+        <h1 class="title" style="text-align: center;">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="email" class="icon contact-icon email">
@@ -230,6 +221,7 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links foot">
+                    <li><a href="#profile">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
