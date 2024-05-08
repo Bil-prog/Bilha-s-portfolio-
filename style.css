@@ -400,6 +400,7 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 /* Contact */
+
 #contact{
     display: flex;
     justify-content: center;
@@ -441,4 +442,11 @@ footer{
 }
 footer p{
     text-align: center;
+}
+.foot li a:hover{
+    color: white;
+    text-decoration: none;
+}
+#pink{
+    background: #fb6f92;  
 }
