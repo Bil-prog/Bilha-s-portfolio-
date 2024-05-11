@@ -99,4 +99,7 @@
     #about{
         margin-top: 9rem;
     }
+    .profilepic{
+        animation: none;
+    }
 }

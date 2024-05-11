@@ -89,6 +89,7 @@ a:hover {
     height: 36vh;
     opacity: 0.9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
 }
 .menu-links a {
     display: block;
@@ -150,6 +151,8 @@ section {
     border-radius: 20%;
     animation: imgg 3s ease-in-out infinite;
     animation-delay: 2s;
+    position: relative;
+    z-index: 1;
 }
 @keyframes imgg {
     0%{
@@ -365,9 +368,14 @@ article .icon {
 }
 .exp{
     transition: background 0.5s, transform 0.5s;
+    background-image: linear-gradient(0deg, #ffc2d1, #fb6f92);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    inset --20px -20px 25px rgba(255,255,255,0.9);
+    
 }    
 .exp:hover{
-    background: #fb6f92;
     transform: translateY(-10px);
 }
 /* projects */
@@ -430,7 +438,7 @@ article .icon {
 footer{
     height: 26vh;
     position: relative;
-    background: #fb6f92;
+    /* background: #fb6f92; */
 }
 footer p{
     text-align: center;
@@ -440,6 +448,7 @@ footer p{
     text-decoration: none;
 }
 #pink{
-    background: #fb6f92; 
+    background-image: linear-gradient(0deg, #ffc2d1, #fb6f92);
+    /* background: #fb6f92;  */
 
 }
